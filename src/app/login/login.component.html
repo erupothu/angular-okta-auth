@@ -1,0 +1,12 @@
+<p>login works!</p>
+
+<div *ngIf="getUserName()">
+	<h1>{{getUserName()}} </h1>
+
+	<button (click)="logout()"> LogOut </button>
+</div>
+
+<div *ngIf="!getUserName()">
+
+	<button (click)="login()">Login</button>
+</div>
